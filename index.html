@@ -1,30 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Abil 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAPPY BIRTHDAY SAYANG🎂</title>
   <style>
-    body {background: linear-gradient(#ffe6f2, #ffd1dc); text-align: center; font-family: sans-serif; padding: 20px;}
-    h1 {color: #d63384;}
-    img {width: 90%; max-width: 400px; margin: 15px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);}
-    audio {margin-top: 30px;}
+    body {
+      background: linear-gradient(135deg, #87CEEB, #1E90FF);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: white;
+      padding: 30px;
+      min-height: 100vh;
+    }
+    h1 { font-size: 2.5em; text-shadow: 2px 2px 4px #00040; }
+    p { font-size: 1.2em; line-height: 1.6; }
+    button {
+      background: white;
+      color: #1E90FF;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+    button:hover { transform: scale(1.05); }
+    .hidden { display: none; }
+    
+    /* ANIMASI FADE IN */
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ANIMASI FOTO */
+    img { 
+      width: 200px; 
+      border-radius: 15px; 
+      margin: 10px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popIn 0.6s ease forwards;
+    }
+    img:nth-child(2) { animation-delay: 0.2s; }
+    img:nth-child(3) { animation-delay: 0.4s; }
+    img:nth-child(4) { animation-delay: 0.6s; }
+    img:nth-child(5) { animation-delay: 0.8s; }
+    img:nth-child(6) { animation-delay: 1s; }
+    img:nth-child(7) { animation-delay: 1.2s; }
+    img:nth-child(8) { animation-delay: 1.4s; }
+
+    @keyframes popIn {
+      to { opacity: 1; transform: scale(1); }
+    }
   </style>
 </head>
 <body>
-  <h1>Selamat Ulang Tahun Abil 🎂</h1>
-  <p>7 kenangan buat kamu 💖</p>
-  
-  <img src="IMG_20260505_152913_049.jpg"><br>
-  <img src="IMG_20260505_152922_039.jpg"><br>
-  <img src="IMG_20260531_075444_823.jpg"><br>
-  <img src="IMG_20260531_075447_575.jpg"><br>
-  <img src="IMG_20260531_075450_630.jpg"><br>
-  <img src="IMG_20260708_013127_705.jpg"><br>
-  <img src="IMG_20260715_131634_868.jpg"><br>
 
-  <audio controls autoplay loop>
+  <h1>20 desember 2009</h1>
+  <button onclick="show1()">Klik aku dulu</button>
+
+  <div id="step1" class="hidden">
+    <h2>selamat ulang tahun!!!🥳</h2>
+    <p>hari ini hari spesialnya orang paling ganteng sedunia</p>
+    <button onclick="show2()">next</button>
+  </div>
+
+  <div id="step2" class="hidden">
+    <h2>untuk kamu...</h2>
+    <p>
+      hai sayang<br><br>
+      selamat ulang tahun manusia favoritku<br>
+      berbahagialah selalu, seperti pelangi yang selalu membahagiakan orang lain<br>
+      semoga hal-hal baik selalu menyertai kamu, dan kasih sayang selalu menyelimuti kamu<br>
+      semoga apa yang kamu inginkan dan apa yang kamu harapkan selalu didengar dan dikabulkan oleh Allah<br>
+      jadilah orang yang baik, selalu<br>
+      selalu taat, hormat, dan kuat, ya?<br>
+      taat kepada Allah, hormat kepada orang tua, dan kuat dalam menghadapi rintangan hidup<br>
+      bersenang-senang lah hari ini, sebab hari ini adalah hari yang diam-diam paling kamu tunggu di antara 365 hari yang panjang<br>
+      semua doa terbaik selalu menyertaimu, semoga semesta senantiasa melimpahkan berkah untukmu, menjadikan setiap langkahmu bermakna, dan merangkai hari-harimu seindah bait puisi<br>
+      aku sayang kamu🤍
+    </p>
+    <button onclick="show3()">next?</button>
+  </div>
+
+  <div id="step3" class="hidden">
+    <h2>for u my favorite man🤍✨</h2>
+    <p>
+      i love u sayang🤍<br><br>
+      aku gabisa rangkai kata-kata manis buat kamu karena aku bukan penulis, aku juga bukan orang yang bisa gombal, karena aku bukan pidi baiq, aku juga bukan orang yang jago buat syair.<br>
+      aku cuma perempuan yang mau lihat kamu tumbuh bareng aku setiap harinya.<br>
+      terimakasih ya sudah memilih aku buat jatuh cinta.<br>
+      jika kamu bertanya cinta seperti apa yang terada begitu indah di hidupku.<br>
+      aku akan menjawab dengan keras bahwa tidak ada jatuh cinta paling indah selain dirimu, abil<br>
+      tuhan aja sayang, apalagi aku<br>
+      -shely
+    </p>
+    <button onclick="show4()">next</button>
+  </div>
+
+  <div id="step4" class="hidden">
+    <h2>coba lihat ini deh🖼️</h2>
+    <p>your photos</p>
+    <img src="foto1.jpg" alt="foto1">
+    <img src="foto2.jpg" alt="foto2">
+    <img src="foto3.jpg" alt="foto3">
+    <img src="foto4.jpg" alt="foto4">
+    <img src="foto5.jpg" alt="foto5">
+    <img src="foto6.jpg" alt="foto6">
+    <img src="foto7.jpg" alt="foto7">
+  </div>
+
+  <!-- MUSIK -->
+  <audio id="musik" loop>
     <source src="lagu.mp3" type="audio/mpeg">
   </audio>
+
+  <script>
+    function show1() {
+      let el = document.getElementById('step1');
+      el.style.display = 'block';
+      el.classList.add('fade-in');
+      document.getElementById('musik').play();
+    }
+    function show2() {
+      let el = document.getElementById('step2');
+      el.style.display = 'block';
+      el.classList.add('fade-in');
+    }
+    function show3() {
+      let el = document.getElementById('step3');
+      el.style.display = 'block';
+      el.classList.add('fade-in');
+    }
+    function show4() {
+      let el = document.getElementById('step4');
+      el.style.display = 'block';
+      el.classList.add('fade-in');
+    }
+  </script>
 
 </body>
 </html>
